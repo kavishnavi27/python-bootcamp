@@ -1,0 +1,17 @@
+from Tkinter import *
+widget=Tk()
+widget.title("Employee registration")
+widget.configure(background="black")
+title=Label(widget,text="Employee Details Form",fg="red",font=("Bold")).grid(row=0,column=1)
+Fname=Label(widget,text="Firstname").grid(row=1,column=0)
+Fname=Entry(widget,bg="grey").grid(row=1,column=1)
+Lname=Label(widget,text="Lastname").grid(row=2,column=0)
+Lname=Entry(widget,bg="grey").grid(row=2,column=1)
+gender=Label(widget,text="Gender").grid(row=3,column=0)
+gender1=Radiobutton(widget,text="Male").grid(row=3,column=1)
+gender2=Radiobutton(widget,text="Female").grid(row=3,column=2)
+Mobnum=Label(widget,text="Mobile Number").grid(row=4,column=0)
+Mobnum=Entry(widget,bg="grey").grid(row=4,column=1)
+button=Button(widget,text="submit",bg="green",command="onclick",fg="blue").grid(row=5,column=1)
+              
+widget.mainloop()
