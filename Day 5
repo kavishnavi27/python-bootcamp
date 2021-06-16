@@ -1,0 +1,28 @@
+lst=[]
+n=int(input('enter the no. of ele:'))
+for i in range(0,n):
+    ele=int(input())
+    lst.append(ele) 
+print(lst) 
+lst.append(8)
+print(lst) 
+lst.pop()
+print(lst) 
+lst.pop(1)
+print(lst) 
+lst.remove(4)
+print(lst) 
+del lst
+print(lst)
+
+
+#reversing a tuple
+a=("hello",3.14,True) 
+print(a[::-1])
+#tuple to list
+b=(1,2,3,4)
+print(b) 
+print(type(b))
+c=list(b) 
+print(c) 
+print(type(c))
