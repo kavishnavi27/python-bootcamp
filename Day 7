@@ -1,0 +1,18 @@
+#arithmetic operations
+import math
+def arith(a,b):
+    print("Addition of two numbers is ",math.ceil(a+b))
+    print("Subtraction of two numbers is ",math.ceil(a-b)) 
+    print("Division of two numbers is ",math.floor(a/b))
+    print("Multiplication of two numbers is ",math.floor(a*b)) 
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+arith(a,b)
+
+#patient details
+def covid(patient_name,body_temperature):
+    print("Patient name: "+patient_name) 
+    print("Body temperature: ",+body_temperature) 
+patient_name=str(input("Enter:"))
+body_temperature=(98)
+covid(patient_name,body_temperature)
