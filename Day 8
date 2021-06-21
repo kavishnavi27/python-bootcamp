@@ -1,0 +1,108 @@
+#merging of two dictionaries
+dict1={1:"Apple",2:"Ball",3:"Cat"}
+dict2={3:"Cat",4:"Dog"}
+dict1.update(dict2)
+print(dict1)
+
+#sort of list and convert to set 
+lst=[56,34,12,33,27,60]
+lst.sort(reverse=True) 
+print(lst) 
+print(set(lst))
+#listing dictionary keys
+dict={2:"abc",1:"def",5:"ghi",4:"jkl"}
+list=dict.keys()
+print("List:")
+print(list) 
+sortwithfunc=sorted(list) 
+print("Sorting with func:")
+print(sortwithfunc)
+
+#change the first occurence in str
+a=str(raw_input("Enter the string:"))
+b=str(raw_input("Enter the occurence character:"))
+ch=str(raw_input("Enter the character to change:"))
+for x in range(0,len(a)):
+    if(a[x]==b):
+        replaced=a.replace(a[x],ch,1)
+        exit
+print(replaced)
+....
+Enter the string:language
+Enter the occurence character:a
+Enter the character to change:A
+lAnguage
+
+#change first letter of all occurence
+a=str(raw_input("Enter the string:"))
+b=a[0]
+for x in range(0,len(a)):
+    if(a[x]==b):
+        capitalize=a.replace(a[x],a[x].upper())
+print("after changed:")        
+print(capitalize)
+....
+Enter the string:malayalam
+after changed:
+MalayalaM
+
+#mean,median,mode
+from collections import Counter
+def mean(sum_lst,n):
+    mean=sum_lst/n
+    print("mean of list:"+str(mean))
+def median(sort_lst,n):
+    if(n%2==0):
+        median=sort_lst[n//2]
+        print("median of list:"+str(median))
+    else:
+        median1=sort_lst[n//2]
+        median2=sort_lst[n//2-1]
+        print("median of list:"+str((median1+median2)/2))
+def mode(lst1):
+    c=Counter(lst1)
+    return[k for k,v in c.items() if v==c.most_common(1)[0][1]]
+lst=[1,5,3,5,8,5,9,6,1]
+n=len(lst)
+print("length of list:"+str(n))
+s_lst=sum(lst)
+print("sum of list:"+str(s_lst))
+srt_lst=sorted(lst)
+print("sorted list:"+str(srt_lst))
+mean(s_lst,n)
+median(srt_lst,n)
+print("mode of list:"+str(mode(lst)))
+...
+length of list:9
+sum of list:43
+sorted list:[1, 1, 3, 5, 5, 5, 6, 8, 9]
+mean of list:4
+median of list:5
+mode of list:[5]
+
+#swap to string
+str1="happy"
+str2="morning"
+temp=str1
+str1=str2
+str2=temp
+print("string1:"+str1)
+print("string2:"+str2)
+....
+string1:morning
+string2:happy
+
+#int to binary and octal
+def binary(x):
+    if(x>=1):
+        return bin(x).replace("0b"," ")
+def octal(x):
+    if(x>=1):
+        return oct(x).replace("0o"," ")
+n=10
+binary(n)
+print("binary of "+str(n)+":"+str((binary(n))))
+print("octal of "+str(n)+":"+str((octal(n))))
+....
+binary of 10: 1010
+octal of 10:012
