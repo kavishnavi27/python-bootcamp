@@ -1,0 +1,93 @@
+#add 2 in all ele in list
+lst=[]
+add_lst=[]
+n=int(input("enter the no.of.elements:"))
+for x in range(0,n):
+    ele=int(input("enter the element"+str(x+1)+":"))
+    lst.append(ele)
+print(lst)
+print("list after adding 2:")
+for x in range(0,n):
+    add=lst[x]+2
+    add_lst.append(add)
+print(add_lst)
+.... 
+enter the no.of.elements:4
+enter the element1:2
+enter the element2:3
+enter the element3:5
+enter the element4:6
+[2, 3, 5, 6]
+list after adding 2:
+[4, 5, 7, 8]
+
+#fibonacci with/without func
+n=int(input("enter the n val:"))
+for i in range(0,n+1):
+    for j in range(n-1,0,-1):
+        print(j)
+....
+def fibnocci(n):
+    if(n==1):
+        return n
+    else:
+        return (fibnocci(n-1)+fibnocci(n-2))
+n=int(raw_input("enter the n:"))
+print(fibnocci(n))
+.....
+enter the n:5
+0
+1
+1
+2
+3
+5
+8
+
+#armstrong num
+def armstrong(n):
+    res=0
+    temp=n
+    while temp>0 :
+       rem=temp%10
+       res=res+rem**len(str(n))
+       temp=temp//10
+    if(res==n):
+        print(str(res)+" armstrong num")
+    else:
+        print(str(res)+" not armmstrong num")
+x=int(input("enter the n val:"))
+armstrong(x)
+.....
+enter the n val:153
+153 armstrong num
+
+#9 th table
+n=int(input("enter which table:"))
+print(str(n)+" Table")
+for i in range(0,10):
+    s=(i+1)*n
+    print(str(i+1)+"x"+str(n)+"="+str(s))
+....
+enter which table:9
+9 Table
+1x9=9
+2x9=18
+3x9=27
+4x9=36
+5x9=45
+6x9=54
+7x9=63
+8x9=72
+9x9=81
+10x9=90
+
+#pos or neg
+n=int(input("enter the n val:"))
+if(n>0):
+    print(str(n)+" positive")
+else:
+    print(str(n)+" negative")
+....
+enter the n val:-1
+-1 negative
