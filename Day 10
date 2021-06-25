@@ -1,0 +1,39 @@
+class bankacc:
+    def __init__(self):
+        print("welcome to our bank")
+        self.bal=0
+    def chkbal(self):
+        print("net balance in your acc:"+str(self.bal))
+    def dep(self):
+        amount=int(input("enter the amount to deposit:"))
+        self.bal=self.bal+amount
+        print("deposited amount:"+str(amount))
+        print("current balance:"+str(self.bal))
+    def withdrw(self):
+        amount=input("enter the amount to withdraw:")
+        if(self.bal>amt):
+            self.bal=self.bal-amount
+            print("withdraw amount:"+str(amount))
+            print("current balance:"+str(self.bal))
+        else:
+            print("insufficient balance")
+ob1=bankacc()
+print("1.check balance\n\
+2.deposit\n\
+3.withdraw")
+ch=int(raw_input("***select option***:"))
+if(ch==1):
+    ob1.chkbal()
+elif(ch==2):
+    ob1.dep()
+elif(ch==3):
+    ob1.withdrw()
+    ......
+welcome to our bank
+1.check balance
+2.deposit
+3.withdraw
+***select option***:2
+enter the amount to deposit:1000
+deposited amount:1000
+current balance:1000
