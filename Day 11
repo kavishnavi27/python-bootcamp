@@ -1,0 +1,23 @@
+#lst.py
+def lst():
+    a=[1,2,3,4,5]
+    print(a)
+lst()
+#import func
+import lst
+lst.lst()
+....
+[1, 2, 3, 4, 5]
+
+#import module pick random number
+import random
+print("random num from 1 to 100:")
+print(random.randrange(1,100))
+....
+random num from 1 to 100:
+87
+
+#import path
+import sys
+sys.path
+['D:\\hemamalini pgrm', 'C:\\Python27\\Lib\\idlelib', 'C:\\WINDOWS\\SYSTEM32\\python27.zip', 'C:\\Python27\\DLLs', 'C:\\Python27\\lib', 'C:\\Python27\\lib\\plat-win', 'C:\\Python27\\lib\\lib-tk', 'C:\\Python27', 'C:\\Python27\\lib\\site-packages']
