@@ -1,0 +1,14 @@
+def write():
+    file1=open(r"D:\30 days 30 hour operation.txt","r+")
+    line="10 days successfully"
+    file1.write(line)
+    file1.close()
+def append():
+    file1=open(r"D:\30 days 30 hour operation.txt","a")
+    name=" Kavishnavi"
+    file1.write(name)
+    file1.close()
+write()
+append()
+......
+10 days successfully Kavishnavi
